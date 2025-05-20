@@ -16,6 +16,8 @@ source(here("paths.R"))
 source(here("utils", "function_iptw_weights.R"))
 source(here("utils", "function_love_plots.R"))
 source(here("utils", "function_full_analysis.R"))
+source(here("utils", "function_full_model_glmer.R"))
+source(here("utils", "function_full_model_gee.R"))
 
 # Read data ----
 df_paper_final <- readRDS(here(path_processed, "df_dhs_temperature_merged.rds"))
