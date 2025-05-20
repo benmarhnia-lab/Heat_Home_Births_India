@@ -15,10 +15,10 @@ pacman::p_load(MatchIt, cobalt, sandwich, survey, geepack)
 source(here("paths.R"))
 
 # Source functions ----
-source(here("01_src", "02_models", "utils", "function_iptw_weights.R"))
-source(here("01_src", "02_models", "utils", "function_EM_model_gee.R"))
-source(here("01_src", "02_models", "utils", "function_EM_subgroup_effects.R"))
-source(here("01_src", "02_models", "utils", "function_EM_extract_results_excel.R"))
+source(here("utils", "function_iptw_weights.R"))
+source(here("utils", "function_EM_model_gee.R"))
+source(here("utils", "function_EM_subgroup_effects.R"))
+source(here("utils", "function_EM_extract_results_excel.R"))
 
 # Read datasets ----
 df_paper_final <- readRDS(here(path_processed, "df_dhs_temperature_merged.rds"))

@@ -14,9 +14,9 @@ pacman::p_load(MatchIt, cobalt, sandwich, survey, geepack, openxlsx)
 source(here("paths.R"))
 
 # Source utility functions ----
-source(here("01_src", "02_models", "utils", "function_iptw_weights.R"))
-source(here("01_src", "02_models", "utils", "function_love_plots.R"))
-source(here("01_src", "02_models", "utils", "function_full_analysis.R"))
+source(here("utils", "function_iptw_weights.R"))
+source(here("utils", "function_love_plots.R"))
+source(here("utils", "function_full_analysis.R"))
 
 # Read data ----
 df_paper_final <- readRDS(here(path_processed, "df_dhs_temperature_merged.rds"))
